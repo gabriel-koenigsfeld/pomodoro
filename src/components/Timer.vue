@@ -7,6 +7,7 @@
     <!--span>{{ currentState == 0 ? "focus!" : "take a break..." }}</span-->
     <div class="flex flex-row gap-4">
       <button
+        aria-label="Pause and Play Timer"
         class="text-white bg-white/10 hover:bg-white/20 active:bg-white/5 transition ease-in-out duration-75 py-1 px-4 rounded-md"
         @click="toggleTimer"
       >
@@ -38,6 +39,7 @@
         </svg>
       </button>
       <button
+        aria-label="Reset Timer"
         class="text-white bg-white/10 hover:bg-white/20 active:bg-white/5 transition ease-in-out duration-75 py-1 px-4 rounded-md"
         @click="resetTimer"
       >
