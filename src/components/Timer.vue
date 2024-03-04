@@ -4,7 +4,6 @@
     class="flex flex-col gap-8 items-center justify-center min-h-screen w-full text-white transition ease-in-out duration-1000"
   >
     <h1 class="text-9xl">{{ formatMinutesToTime(currentTime) }}</h1>
-    <!--span>{{ currentState == 0 ? "focus!" : "take a break..." }}</span-->
     <div class="flex flex-row gap-4">
       <button
         aria-label="Pause and Play Timer"
@@ -152,7 +151,6 @@ watch(currentTime, (newTime) => {
 });
 </script>
 <style>
-/* Add your font styling here */
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

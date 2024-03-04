@@ -1,12 +1,21 @@
 ---
 import Timer from '../components/Timer.vue';
-import Layout from '../layouts/Layout.astro';
 ---
-
-<Layout title="Plain Pomodoro Timer">
-	<main>
-		<div class="min-h-screen w-full">
-			<Timer client:load></Timer>
-		</div>
-	</main>
-</Layout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Plain Pomodoro Timer</title>
+	</head>
+	<body>
+		<main>
+			<div class="min-h-screen w-full">
+				<Timer client:load></Timer>
+			</div>
+		</main>
+	</body>
+</html>
